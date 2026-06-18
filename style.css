@@ -197,6 +197,65 @@ table.tbl tr:nth-child(even) td{background:#fafbfd}
 .tip-bar{background:#eef5ff;border:1px solid #c7ddff;border-radius:12px;padding:14px 18px;margin:20px 0;font-size:14px;color:#1e40af}
 small.src{color:#94a3b8;font-size:12px}
 
+/* 考前复习页 */
+.review-band{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:14px;
+  margin:12px 0 18px;
+}
+.review-band > div{
+  background:#f8fafc;
+  border:1px solid var(--line);
+  border-left:4px solid var(--brand);
+  border-radius:10px;
+  padding:14px 16px;
+}
+.review-band b{display:block;font-size:24px;color:var(--brand-dark);margin:6px 0 2px}
+.review-band p{margin:0;font-size:14px;color:var(--muted);line-height:1.6}
+.exam-tag{
+  display:inline-flex;
+  align-items:center;
+  background:#dbeafe;
+  color:#1e40af;
+  border-radius:999px;
+  padding:2px 10px;
+  font-size:12px;
+  font-weight:700;
+}
+.review-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:14px;
+  margin:12px 0;
+}
+.formula{
+  background:#f8fafc;
+  border:1px solid var(--line);
+  border-left:4px solid #64748b;
+  border-radius:10px;
+  padding:14px 16px;
+  font-size:14px;
+}
+.formula h3{margin-top:0}
+.formula ol,.formula ul{margin:8px 0;padding-left:20px}
+.formula li{margin:4px 0}
+.pill-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:12px 0 18px;
+}
+.pill-list span{
+  background:#fff;
+  border:1px solid var(--line);
+  color:#334155;
+  border-radius:999px;
+  padding:5px 11px;
+  font-size:13px;
+  font-weight:600;
+}
+
 /* ===== 交互题 ===== */
 .quiz{background:#f8fafc;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:12px 0}
 .quiz .stem{margin:0 0 10px;font-weight:600}
