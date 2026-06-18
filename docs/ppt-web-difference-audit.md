@@ -24,9 +24,11 @@
 ## Unit 2 Research Proposal
 
 已发现差异：
+- PPT Warm-up 有 4 个明确问题，网页之前只用中文概述，没有逐条列出。
 - 名词化段落题在 PPT 中直接给出一段英文材料，网页之前把材料藏在参考答案里，学生会觉得缺题干。
 
 已修正：
+- Warm-up 改为列出 PPT 四个问题，包括 research purpose、proposal necessity、topic selection 和人称代词问题。
 - Task 3 直接显示练习段落。
 - 按名词化思路补充“显示改写思路”，说明如何从口语表达转成名词短语。
 - 新增研究问题诊断互动题，区分 too trivial / too broad / weak yes-or-no。
@@ -51,11 +53,13 @@
 - PPT Warm-up 有 6 个问题，网页原来只给答案式概述。
 - 信息要素识别题原来偏开放，缺少可自测版本。
 - Class Attendance Survey 的题目功能没有互动化，学生不容易看出问卷结构。
+- Class Attendance Survey 中部分背景题、出勤变化题、开放评论和 legal reminder 原网页未显示。
 
 已修正：
 - Warm-up 增加 PPT 原问题列表。
 - 新增方法部分信息要素互动匹配题。
 - 新增 Class Attendance Survey 题目功能互动匹配题。
+- 补充 Class Attendance Survey 的结构全貌，包括性别/年龄/专业、来校原因、通勤、工作、出勤变化、开放评论，以及 “For legal reasons” 的不点名提醒。
 
 ## Unit 5 Results & Discussion
 
