@@ -150,3 +150,16 @@
 验证方式：
 - `verify_content_integration.py` 新增上述必检短语，作为后续回归检查。
 - 对 Unit 7 第 18 页使用 `ppt-extracted/unit7.json` 复核，确认课件答案框确为 `F F T F T T`。
+
+## 2026-06-18 再次复查补充
+
+本轮用 PPT JSON 中的任务题干、编号句、表格答案和长材料做低覆盖扫描，再人工筛选。新增修正集中在“网页已有主题，但题目材料被压缩过度”的位置：
+
+- Unit 1：补全 Linking Words and Flow 改写段落的后半部分，并补回 “Sentences that are too short and poorly connected...” 判断依据；文体辨识任务不再只显示省略号，改为保留五段判断材料的主要完整文本。
+- Unit 2：补回 “Choose three topics given in the textbook...” 的小组项目选题任务，改成 interest / feasibility / focus / group value 四项检查表。
+- Unit 4：补回 Turning Notes into a Passage 的方法章节写作提示，强调 validity and credibility，以及定性/定量选择、样本、问卷/访谈、分析软件都要说明并论证。
+- Unit 5：补足 Move 3 的说明，明确 discussion 要写 research significance、beyond objective results 的解释，以及 strength / limitations / generalizability。
+- Unit 6：扩展结论句型库，补齐课件中 significance、limitations、future research、implications/recommendations 和 restating objective 的常用句型。
+- Unit 7：补全 abstract elements 匹配题中的四个样例句，不再使用截断版省略号。
+
+本轮未机械照抄的低覆盖项主要是：学习目标、已被互动题等价覆盖的题干措辞、以及课件中没有给出具体材料的开放讨论题。
