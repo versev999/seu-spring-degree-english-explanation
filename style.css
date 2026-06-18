@@ -1,0 +1,240 @@
+/* 学术英语写作 · 网页教程 通用样式 */
+:root{
+  color-scheme: light;
+  --bg:#f5f7fa;
+  --card:#ffffff;
+  --ink:#1f2933;
+  --muted:#5b6b7b;
+  --brand:#2563eb;
+  --brand-dark:#1e40af;
+  --zh-bg:#eef5ff;
+  --zh-border:#3b82f6;
+  --kp-bg:#fff8e6;
+  --kp-border:#f59e0b;
+  --ex-bg:#f0fbf4;
+  --ex-border:#10b981;
+  --ans-bg:#fdf2f8;
+  --ans-border:#db2777;
+  --line:#e3e8ef;
+  --radius:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"Microsoft YaHei","PingFang SC","Hiragino Sans GB","Segoe UI",system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.75;
+  font-size:16px;
+}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* 顶部导航 */
+.topbar{
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+  padding:10px 18px;
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+}
+.topbar .home{font-weight:700;color:var(--brand-dark);font-size:15px}
+.topbar nav{display:flex;gap:6px;flex-wrap:wrap}
+.topbar nav a{
+  font-size:13px;padding:4px 10px;border-radius:999px;color:var(--muted);
+  border:1px solid transparent;
+}
+.topbar nav a:hover{background:#eef2f7;text-decoration:none}
+.topbar nav a.active{background:var(--brand);color:#fff}
+
+/* 容器 */
+.wrap{max-width:920px;margin:0 auto;padding:28px 20px 80px}
+
+/* 页眉 */
+.page-head{
+  background:linear-gradient(135deg,#2563eb,#1e40af);
+  color:#fff;border-radius:var(--radius);
+  padding:30px 30px;margin-bottom:26px;
+  box-shadow:0 10px 30px -12px rgba(37,99,235,.5);
+}
+.page-head .eyebrow{opacity:.85;font-size:13px;letter-spacing:1px;margin:0 0 6px}
+.page-head h1{margin:0 0 4px;font-size:26px;line-height:1.3}
+.page-head .sub{margin:6px 0 0;opacity:.92;font-size:14px}
+
+/* 目标 / objectives */
+.objectives{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px 22px;margin-bottom:24px;
+}
+.objectives h3{margin:0 0 10px;font-size:16px;color:var(--brand-dark)}
+.objectives ul{margin:0;padding-left:20px}
+.objectives li{margin:4px 0}
+
+/* 章节 */
+section.block{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px 24px;margin-bottom:22px;
+  box-shadow:0 1px 2px rgba(16,24,40,.04);
+}
+section.block > h2{
+  margin:0 0 14px;font-size:20px;color:var(--brand-dark);
+  padding-bottom:8px;border-bottom:2px solid var(--line);
+}
+section.block h3{font-size:17px;margin:20px 0 8px;color:#0f3a8a}
+section.block h4{font-size:15px;margin:16px 0 6px;color:#334155}
+.en{margin:8px 0}
+.en .term{font-weight:600}
+
+/* 中文讲解框 */
+.zh{
+  background:var(--zh-bg);border-left:4px solid var(--zh-border);
+  border-radius:8px;padding:12px 16px;margin:12px 0;font-size:15px;
+}
+.zh::before{content:"💡 中文讲解";display:block;font-weight:700;color:var(--brand-dark);
+  font-size:13px;margin-bottom:4px}
+
+/* 知识点框 */
+.kp{
+  background:var(--kp-bg);border-left:4px solid var(--kp-border);
+  border-radius:8px;padding:12px 16px;margin:12px 0;
+}
+.kp::before{content:"⭐ 重点知识点";display:block;font-weight:700;color:#b45309;
+  font-size:13px;margin-bottom:4px}
+.kp ul{margin:6px 0;padding-left:20px}
+
+/* 易错点框 */
+.warn{
+  background:#fff1f0;border-left:4px solid #ef4444;
+  border-radius:8px;padding:12px 16px;margin:12px 0;
+}
+.warn::before{content:"⚠️ 易错点 / 考点提醒";display:block;font-weight:700;color:#b91c1c;
+  font-size:13px;margin-bottom:4px}
+
+/* 例句对比 */
+.compare{display:grid;grid-template-columns:1fr;gap:8px;margin:10px 0}
+.compare .row{display:flex;gap:10px;align-items:flex-start;padding:8px 12px;border-radius:8px}
+.compare .bad{background:#fff1f0}
+.compare .good{background:#f0fbf4}
+.compare .tag{flex:0 0 auto;font-size:12px;font-weight:700;padding:1px 8px;border-radius:6px;white-space:nowrap}
+.compare .bad .tag{background:#fecaca;color:#991b1b}
+.compare .good .tag{background:#bbf7d0;color:#166534}
+
+/* 表格 */
+table.tbl{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+table.tbl th,table.tbl td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+table.tbl th{background:#eef2f7;color:#0f3a8a;font-weight:700}
+table.tbl tr:nth-child(even) td{background:#fafbfd}
+
+/* 练习题 */
+.ex{
+  background:var(--ex-bg);border:1px solid var(--ex-border);border-radius:12px;
+  padding:16px 18px;margin:16px 0;
+}
+.ex .ex-title{font-weight:700;color:#166534;margin:0 0 8px;display:flex;align-items:center;gap:8px}
+.ex .ex-title .badge{background:#10b981;color:#fff;font-size:12px;padding:1px 8px;border-radius:6px}
+.ex ol,.ex ul{margin:8px 0;padding-left:22px}
+.ex li{margin:6px 0}
+.ex .q{margin:6px 0}
+
+/* 答案折叠 */
+.answer-toggle{
+  display:inline-flex;align-items:center;gap:6px;cursor:pointer;
+  background:#fff;border:1px solid var(--ans-border);color:var(--ans-border);
+  font-size:13px;font-weight:700;padding:5px 12px;border-radius:999px;margin-top:8px;
+  transition:all .15s;
+}
+.answer-toggle:hover{background:var(--ans-border);color:#fff}
+.answer{
+  display:none;background:var(--ans-bg);border-left:4px solid var(--ans-border);
+  border-radius:8px;padding:12px 16px;margin-top:10px;font-size:15px;
+}
+.answer.show{display:block}
+.answer::before{content:"✓ 参考答案";display:block;font-weight:700;color:var(--ans-border);
+  font-size:13px;margin-bottom:6px}
+.answer ol,.answer ul{margin:6px 0;padding-left:20px}
+
+/* 页脚导航 */
+.pager{display:flex;justify-content:space-between;gap:12px;margin-top:30px}
+.pager a{
+  flex:1;background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:14px 18px;font-weight:600;color:var(--brand-dark);
+}
+.pager a:hover{border-color:var(--brand);text-decoration:none;background:#f8faff}
+.pager a.next{text-align:right}
+.pager a.disabled{opacity:.4;pointer-events:none}
+
+/* 首页卡片 */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.unit-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px;transition:all .18s;display:block;
+}
+.unit-card:hover{border-color:var(--brand);transform:translateY(-3px);
+  box-shadow:0 12px 28px -14px rgba(37,99,235,.45);text-decoration:none}
+.unit-card .num{font-size:13px;font-weight:700;color:var(--brand);letter-spacing:1px}
+.unit-card h3{margin:6px 0 8px;font-size:18px;color:var(--ink)}
+.unit-card p{margin:0;font-size:13px;color:var(--muted);line-height:1.6}
+.tip-bar{background:#eef5ff;border:1px solid #c7ddff;border-radius:12px;padding:14px 18px;margin:20px 0;font-size:14px;color:#1e40af}
+small.src{color:#94a3b8;font-size:12px}
+
+/* ===== 交互题 ===== */
+.quiz{background:#f8fafc;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:12px 0}
+.quiz .stem{margin:0 0 10px;font-weight:600}
+.quiz .stem .en-q{font-weight:600}
+.quiz .opts{display:flex;flex-direction:column;gap:8px}
+.quiz .opts.row{flex-direction:row;flex-wrap:wrap}
+.quiz .opt{
+  text-align:left;cursor:pointer;font:inherit;
+  background:#fff;border:1.5px solid var(--line);border-radius:8px;
+  padding:9px 14px;color:var(--ink);transition:all .12s;
+}
+.quiz .opts.row .opt{flex:0 0 auto;min-width:96px;text-align:center}
+.quiz .opt:hover{border-color:var(--brand);background:#f5f9ff}
+.quiz.done .opt{cursor:default}
+.quiz .opt.right{background:#dcfce7;border-color:#16a34a;color:#14532d;font-weight:600}
+.quiz .opt.right::after{content:" ✓";color:#16a34a}
+.quiz .opt.wrong{background:#fee2e2;border-color:#dc2626;color:#7f1d1d}
+.quiz .opt.wrong::after{content:" ✗";color:#dc2626}
+.quiz .opt.reveal{background:#dcfce7;border-color:#16a34a;color:#14532d;font-weight:600}
+.quiz .opt.reveal::after{content:" ← 正确答案";color:#16a34a;font-size:12px;font-weight:700}
+
+.quiz select{
+  font:inherit;padding:4px 8px;border-radius:6px;border:1.5px solid var(--line);background:#fff;color:var(--ink);
+}
+.quiz select.right{border-color:#16a34a;background:#dcfce7}
+.quiz select.wrong{border-color:#dc2626;background:#fee2e2}
+.quiz table.tbl td{vertical-align:middle}
+
+.check-btn{
+  margin-top:12px;cursor:pointer;font:inherit;font-weight:700;font-size:14px;
+  background:var(--brand);color:#fff;border:none;border-radius:999px;padding:8px 20px;
+}
+.check-btn:hover{background:var(--brand-dark)}
+.score{margin-top:10px;font-weight:700;font-size:14px}
+.score.all{color:#16a34a}
+.score.part{color:#b45309}
+
+.explain{
+  display:none;background:var(--zh-bg);border-left:4px solid var(--zh-border);
+  border-radius:8px;padding:11px 15px;margin-top:12px;font-size:14.5px;
+}
+.explain.show{display:block}
+.explain::before{content:"💡 解析";display:block;font-weight:700;color:var(--brand-dark);font-size:13px;margin-bottom:4px}
+
+.brand-link{
+  display:inline-flex;
+  align-items:center;
+  line-height:0;
+  text-decoration:none;
+}
+.brand-logo{
+  display:block;
+  width:auto;
+  height:34px;
+  object-fit:contain;
+}
+@media (max-width: 640px){
+  .brand-logo{height:28px;}
+}
