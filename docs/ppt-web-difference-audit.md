@@ -134,3 +134,19 @@
 ## 后续审查重点
 
 - 如后续继续增强，可针对 Unit 1-8 增加更多“开放写作题 → 分步评分标准”的练习；本轮已优先补齐 PPT 中影响自学和做题的缺口。
+
+## 2026-06-18 严格复查补充
+
+本次复查不再只看关键词是否出现，而是重点检查“题干、练习材料、判断依据、答案键”是否足以支撑学生独立完成课件任务。
+
+新增发现并已修正：
+- Unit 2：补出第一人称代词的课件原意，即使用 first person pronouns 可建立作者身份，删除它们可强化 impersonal tone。
+- Unit 3：补出 poverty and crime 三段 extract 材料，不再只给最后整合答案；同时展开 literature review 六步法中 Step 3 的五类摘录，并恢复“Follow the six steps and write the literature review...”任务。
+- Unit 4：补出被动语态后续句子 5-8，包含 weather-station observations 和 oil-pipe lid 例句；问卷样例补出 How old are you、Do you have a job、attendance change、looking-ahead attendance、general comments、legal reminder 和 thank-you 结尾。
+- Unit 5：补出 graph 的定义、类型、结果部分使用方式、完整 useful expressions、highlighting examples，以及 claim 的定义和 strengthening/weakening 的功能说明；结果与讨论谋篇部分补出 Move 1、Move 2 和 Move 4 的课件细项。
+- Unit 7：摘要写作流程题题干改回课件原句；reference-list True/False 任务补出课件原答案键 `1-F, 2-F, 3-T, 4-F, 5-T, 6-T`。其中第 4/5 题与常见写作规范存在疑点，网页已明示“课件原答案”和实际写作提示。
+- Unit 8：补出礼貌表达中的 `I’d appreciate it` 版本，并把审稿回复题干与 “gold standard” 评论补完整。
+
+验证方式：
+- `verify_content_integration.py` 新增上述必检短语，作为后续回归检查。
+- 对 Unit 7 第 18 页使用 `ppt-extracted/unit7.json` 复核，确认课件答案框确为 `F F T F T T`。
